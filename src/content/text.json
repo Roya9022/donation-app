@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Welcome kind stranger!",
+    "description": "Help make a difference by donating to causes that matter. Your support changes lives."
+  },
+  "bottomNavigation": {
+    "home": "Home",
+    "favorites": "My Favorites",
+    "profile": "Profile"
+  },
+  "footer": {},
+  "profile": {},
+  "favorites": {}
+}
