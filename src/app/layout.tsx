@@ -1,12 +1,13 @@
 'use client';
 
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { EmotionCacheProvider } from '@/providers/EmotionCache';
 import './globals.css';
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-sans',
+  weight: ['300', '400', '500', '600', '700'], // adjust as needed
+  variable: '--font-poppins',
 });
 
 type Props = {
@@ -16,7 +17,7 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${poppins.variable} antialiased`}>
         <EmotionCacheProvider>{children}</EmotionCacheProvider>
       </body>
     </html>

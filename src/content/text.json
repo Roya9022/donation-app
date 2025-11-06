@@ -1,6 +1,9 @@
 {
   "home": {
-    "title": "Welcome kind stranger!",
+    "greeting": {
+      "title": "Welcome patron!",
+      "together": "Let's make a positive difference together..."
+    },
     "description": "Help make a difference by donating to causes that matter. Your support changes lives."
   },
   "bottomNavigation": {
