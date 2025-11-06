@@ -1,9 +1,9 @@
 export const colors = {
   text: {
-    primary: '#212121',
+    primary: '#525252',
     secondary: '#616161',
     disabled: '#9e9e9e',
-    neutral: '#525252',
+    dark: '#212121',
   },
 
   primary: '#82AB9B',

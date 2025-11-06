@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1",
+    "title": "St. Jude Children's Research Hospital",
+    "description": "Treats and defeats childhood cancer and other life-threatening diseases.",
+    "category": "Health",
+    "image": "https://www.stjude.org/image.jpg",
+    "website": "https://www.stjude.org/"
+  },
+  {
+    "id": "2",
+    "title": "Doctors Without Borders USA (MSF)",
+    "description": "Provides medical humanitarian aid in areas affected by conflict, epidemics, or disasters.",
+    "category": "International Aid",
+    "image": "https://www.doctorswithoutborders.org/image.jpg",
+    "website": "https://www.doctorswithoutborders.org/"
+  },
+  {
+    "id": "3",
+    "title": "Feeding America",
+    "description": "A nationwide network of food banks feeding the hungry in the United States.",
+    "category": "Domestic Needs",
+    "image": "https://www.feedingamerica.org/image.jpg",
+    "website": "https://www.feedingamerica.org/"
+  },
+  {
+    "id": "4",
+    "title": "The Nature Conservancy",
+    "description": "Works to conserve the lands and waters on which all life depends.",
+    "category": "Environment",
+    "image": "https://www.nature.org/image.jpg",
+    "website": "https://www.nature.org/"
+  },
+  {
+    "id": "5",
+    "title": "Alzheimer's Association",
+    "description": "Leads the way to end Alzheimer's and all other dementia by accelerating global research.",
+    "category": "Health",
+    "image": "https://www.alz.org/image.jpg",
+    "website": "https://www.alz.org/"
+  },
+  {
+    "id": "6",
+    "title": "Habitat for Humanity International",
+    "description": "Builds and improves homes in partnership with families in need.",
+    "category": "Housing & Aid",
+    "image": "https://www.habitat.org/image.jpg",
+    "website": "https://www.habitat.org/"
+  },
+  {
+    "id": "7",
+    "title": "World Wildlife Fund (WWF)",
+    "description": "Works to conserve nature and reduce the most pressing threats to the diversity of life on Earth.",
+    "category": "Animals & Wildlife",
+    "image": "https://www.worldwildlife.org/image.jpg",
+    "website": "https://www.worldwildlife.org/"
+  },
+  {
+    "id": "8",
+    "title": "United Way Worldwide",
+    "description": "Improves lives by mobilizing the caring power of communities around the world.",
+    "category": "Community Development",
+    "image": "https://www.unitedway.org/image.jpg",
+    "website": "https://www.unitedway.org/"
+  },
+  {
+    "id": "9",
+    "title": "Boys & Girls Clubs of America",
+    "description": "Enables all young people, especially those who need them most, to reach their full potential.",
+    "category": "Youth & Education",
+    "image": "https://www.bgca.org/image.jpg",
+    "website": "https://www.bgca.org/"
+  },
+  {
+    "id": "10",
+    "title": "American Red Cross",
+    "description": "Prevents and alleviates human suffering in the face of emergencies.",
+    "category": "Disaster Relief",
+    "image": "https://www.redcross.org/image.jpg",
+    "website": "https://www.redcross.org/"
+  },
+  {
+    "id": "11",
+    "title": "Direct Relief",
+    "description": "Delivers essential medical resources to communities affected by poverty or disaster.",
+    "category": "International Aid",
+    "image": "https://www.directrelief.org/image.jpg",
+    "website": "https://www.directrelief.org/"
+  },
+  {
+    "id": "12",
+    "title": "Save the Children",
+    "description": "Gives children a healthy start, the opportunity to learn, and protection from harm.",
+    "category": "Children & Youth",
+    "image": "https://www.savethechildren.org/image.jpg",
+    "website": "https://www.savethechildren.org/"
+  },
+  {
+    "id": "13",
+    "title": "Wounded Warrior Project",
+    "description": "Honors and empowers wounded veterans who incurred a physical or mental injury during military service.",
+    "category": "Veterans",
+    "image": "https://www.woundedwarriorproject.org/image.jpg",
+    "website": "https://www.woundedwarriorproject.org/"
+  },
+  {
+    "id": "14",
+    "title": "Smithsonian Institution",
+    "description": "Increases and diffuses knowledge through its museums, research, and educational programs.",
+    "category": "Arts & Culture",
+    "image": "https://www.si.edu/image.jpg",
+    "website": "https://www.si.edu/"
+  },
+  {
+    "id": "15",
+    "title": "Leukemia & Lymphoma Society",
+    "description": "Fights blood cancers through research, education, and patient services.",
+    "category": "Health",
+    "image": "https://www.lls.org/image.jpg",
+    "website": "https://www.lls.org/"
+  },
+  {
+    "id": "16",
+    "title": "Wikimedia Foundation",
+    "description": "Supports Wikipedia and other free knowledge projects globally.",
+    "category": "Education & Technology",
+    "image": "https://wikimediafoundation.org/image.jpg",
+    "website": "https://wikimediafoundation.org/"
+  },
+  {
+    "id": "17",
+    "title": "ASPCA",
+    "description": "Works to prevent animal cruelty and provide support to animals in need.",
+    "category": "Animals & Wildlife",
+    "image": "https://www.aspca.org/image.jpg",
+    "website": "https://www.aspca.org/"
+  },
+  {
+    "id": "18",
+    "title": "Make-A-Wish Foundation of America",
+    "description": "Creates life-changing wishes for children with critical illnesses.",
+    "category": "Children & Youth",
+    "image": "https://wish.org/image.jpg",
+    "website": "https://wish.org/"
+  },
+  {
+    "id": "19",
+    "title": "Planned Parenthood Federation of America",
+    "description": "Provides reproductive health care, sex education, and advocacy.",
+    "category": "Health",
+    "image": "https://www.plannedparenthood.org/image.jpg",
+    "website": "https://www.plannedparenthood.org/"
+  },
+  {
+    "id": "20",
+    "title": "American Heart Association",
+    "description": "Funds cardiovascular medical research, educates consumers, and advocates for public health.",
+    "category": "Health",
+    "image": "https://www.heart.org/image.jpg",
+    "website": "https://www.heart.org/"
+  },
+  {
+    "id": "21",
+    "title": "CARE",
+    "description": "Fights global poverty by empowering women and girls worldwide.",
+    "category": "International Aid",
+    "image": "https://www.care.org/image.jpg",
+    "website": "https://www.care.org/"
+  },
+  {
+    "id": "22",
+    "title": "American Civil Liberties Union (ACLU) Foundation",
+    "description": "Works to defend and preserve the individual rights and liberties guaranteed to every person.",
+    "category": "Civil Rights & Advocacy",
+    "image": "https://www.aclu.org/image.jpg",
+    "website": "https://www.aclu.org/"
+  },
+  {
+    "id": "23",
+    "title": "City of Hope",
+    "description": "A comprehensive cancer center and a leader in research and treatment of cancer and diabetes.",
+    "category": "Health",
+    "image": "https://www.cityofhope.org/image.jpg",
+    "website": "https://www.cityofhope.org/"
+  },
+  {
+    "id": "24",
+    "title": "Good360",
+    "description": "Distributes donated goods to charities working with people in need.",
+    "category": "Domestic Needs",
+    "image": "https://good360.org/image.jpg",
+    "website": "https://good360.org/"
+  },
+  {
+    "id": "25",
+    "title": "Grameen Foundation",
+    "description": "Works to end poverty and hunger by helping the world’s poor, especially women, achieve their potential.",
+    "category": "Economic Development",
+    "image": "https://grameenfoundation.org/image.jpg",
+    "website": "https://grameenfoundation.org/"
+  },
+  {
+    "id": "26",
+    "title": "Water.org",
+    "description": "Brings safe water and sanitation to the world through access to small, affordable loans.",
+    "category": "International Aid",
+    "image": "https://water.org/image.jpg",
+    "website": "https://water.org/"
+  },
+  {
+    "id": "27",
+    "title": "National Public Radio (NPR)",
+    "description": "Produces and distributes news, analysis, and cultural programming.",
+    "category": "Arts & Culture",
+    "image": "https://www.npr.org/image.jpg",
+    "website": "https://www.npr.org/"
+  },
+  {
+    "id": "28",
+    "title": "National Geographic Society",
+    "description": "Uses science, exploration, education, and storytelling to illuminate and protect the wonder of our world.",
+    "category": "Education & Environment",
+    "image": "https://www.nationalgeographic.org/image.jpg",
+    "website": "https://www.nationalgeographic.org/"
+  },
+  {
+    "id": "29",
+    "title": "Environmental Defense Fund",
+    "description": "Finds practical, lasting solutions to the most serious environmental problems.",
+    "category": "Environment",
+    "image": "https://www.edf.org/image.jpg",
+    "website": "https://www.edf.org/"
+  },
+  {
+    "id": "30",
+    "title": "Canine Companions",
+    "description": "Provides highly-trained service dogs for people with disabilities free of charge.",
+    "category": "Animals & Disabilities",
+    "image": "https://canine.org/image.jpg",
+    "website": "https://canine.org/"
+  },
+  {
+    "id": "31",
+    "title": "Teach for America",
+    "description": "Finds, develops, and supports equity-oriented leaders to transform education.",
+    "category": "Education",
+    "image": "https://www.teachforamerica.org/image.jpg",
+    "website": "https://www.teachforamerica.org/"
+  },
+  {
+    "id": "32",
+    "title": "Human Rights Watch",
+    "description": "Investigates and reports on abuses happening all around the world.",
+    "category": "Civil Rights & Advocacy",
+    "image": "https://www.hrw.org/image.jpg",
+    "website": "https://www.hrw.org/"
+  },
+  {
+    "id": "33",
+    "title": "World Central Kitchen",
+    "description": "Provides meals in response to humanitarian, climate, and community crises.",
+    "category": "Disaster Relief",
+    "image": "https://wck.org/image.jpg",
+    "website": "https://wck.org/"
+  },
+  {
+    "id": "34",
+    "title": "Michael J. Fox Foundation for Parkinson's Research",
+    "description": "Dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda.",
+    "category": "Health",
+    "image": "https://www.michaeljfox.org/image.jpg",
+    "website": "https://www.michaeljfox.org/"
+  },
+  {
+    "id": "35",
+    "title": "First Book",
+    "description": "Provides new, high-quality books and resources to children in need.",
+    "category": "Education",
+    "image": "https://www.firstbook.org/image.jpg",
+    "website": "https://www.firstbook.org/"
+  },
+  {
+    "id": "36",
+    "title": "International Rescue Committee (IRC)",
+    "description": "Helps people affected by humanitarian crises—including the climate crisis—to survive, recover, and rebuild their lives.",
+    "category": "International Aid",
+    "image": "https://www.rescue.org/image.jpg",
+    "website": "https://www.rescue.org/"
+  },
+  {
+    "id": "37",
+    "title": "Goodwill Industries International",
+    "description": "Provides job training, employment placement services, and other community-based programs.",
+    "category": "Domestic Needs",
+    "image": "https://www.goodwill.org/image.jpg",
+    "website": "https://www.goodwill.org/"
+  },
+  {
+    "id": "38",
+    "title": "Kiva",
+    "description": "A non-profit that allows people to lend money to low-income entrepreneurs and students.",
+    "category": "Economic Development",
+    "image": "https://www.kiva.org/image.jpg",
+    "website": "https://www.kiva.org/"
+  },
+  {
+    "id": "39",
+    "title": "National Alliance on Mental Illness (NAMI)",
+    "description": "Dedicated to improving the lives of individuals and families affected by mental illness.",
+    "category": "Health",
+    "image": "https://www.nami.org/image.jpg",
+    "website": "https://www.nami.org/"
+  },
+  {
+    "id": "40",
+    "title": "Malaria Consortium",
+    "description": "Works to prevent, control, and treat malaria and other communicable diseases in Africa and Asia.",
+    "category": "International Aid",
+    "image": "https://www.malariaconsortium.org/image.jpg",
+    "website": "https://www.malariaconsortium.org/"
+  },
+  {
+    "id": "41",
+    "title": "Big Brothers Big Sisters of America",
+    "description": "Creates and supports one-to-one mentoring relationships that ignite the power and promise of youth.",
+    "category": "Youth & Education",
+    "image": "https://www.bbbs.org/image.jpg",
+    "website": "https://www.bbbs.org/"
+  },
+  {
+    "id": "42",
+    "title": "Marine Toys for Tots Foundation",
+    "description": "Collects new, unwrapped toys and distributes them to less fortunate children.",
+    "category": "Children & Youth",
+    "image": "https://www.toysfortots.org/image.jpg",
+    "website": "https://www.toysfortots.org/"
+  },
+  {
+    "id": "43",
+    "title": "Trust for Public Land",
+    "description": "Creates parks and protects land for people to enjoy, ensuring livable, healthy communities for all.",
+    "category": "Environment",
+    "image": "https://www.tpl.org/image.jpg",
+    "website": "https://www.tpl.org/"
+  },
+  {
+    "id": "44",
+    "title": "Equal Justice Initiative (EJI)",
+    "description": "Works to end mass incarceration and excessive punishment in the United States.",
+    "category": "Civil Rights & Advocacy",
+    "image": "https://eji.org/image.jpg",
+    "website": "https://eji.org/"
+  },
+  {
+    "id": "45",
+    "title": "The Trevor Project",
+    "description": "Provides crisis intervention and suicide prevention services to LGBTQ young people.",
+    "category": "Youth & Health",
+    "image": "https://www.thetrevorproject.org/image.jpg",
+    "website": "https://www.thetrevorproject.org/"
+  },
+  {
+    "id": "46",
+    "title": "Shriners Hospitals for Children",
+    "description": "Provides specialized medical care to children with orthopaedic conditions, burns, spinal cord injuries, and cleft lip and palate.",
+    "category": "Health",
+    "image": "https://www.shrinerschildrens.org/image.jpg",
+    "website": "https://www.shrinerschildrens.org/"
+  },
+  {
+    "id": "47",
+    "title": "Covenant House",
+    "description": "Provides housing and supportive services to young people facing homelessness.",
+    "category": "Housing & Aid",
+    "image": "https://www.covenanthouse.org/image.jpg",
+    "website": "https://www.covenanthouse.org/"
+  },
+  {
+    "id": "48",
+    "title": "Rainforest Alliance",
+    "description": "Works at the intersection of business, agriculture, and forests to make responsible business the new normal.",
+    "category": "Environment",
+    "image": "https://www.rainforest-alliance.org/image.jpg",
+    "website": "https://www.rainforest-alliance.org/"
+  },
+  {
+    "id": "49",
+    "title": "Americares",
+    "description": "Delivers medicines and medical supplies to health programs around the world and in the U.S.",
+    "category": "Disaster Relief",
+    "image": "https://www.americares.org/image.jpg",
+    "website": "https://www.americares.org/"
+  },
+  {
+    "id": "50",
+    "title": "UNCF (United Negro College Fund)",
+    "description": "Supports students' education and development through scholarships and capacity building at historically black colleges and universities.",
+    "category": "Education",
+    "image": "https://uncf.org/image.jpg",
+    "website": "https://uncf.org/"
+  },
+  {
+    "id": "51",
+    "title": "UNRWA",
+    "description": "Provides essential services (education, healthcare, relief) to Palestine Refugees in Gaza, West Bank, Jordan, Lebanon, and Syria.",
+    "category": "International Aid (Palestine)",
+    "image": "https://www.unrwa.org/image.jpg",
+    "website": "https://www.unrwa.org/"
+  },
+  {
+    "id": "52",
+    "title": "Medical Aid for Palestinians (MAP)",
+    "description": "Provides health and medical care to Palestinians affected by conflict, displacement, and occupation.",
+    "category": "Health (Palestine)",
+    "image": "https://www.map.org.uk/image.jpg",
+    "website": "https://www.map.org.uk/"
+  },
+  {
+    "id": "53",
+    "title": "International Committee of the Red Cross (ICRC)",
+    "description": "Works to protect and assist victims of armed conflict and other situations of violence, upholding international humanitarian law.",
+    "category": "Conflict & Disaster Relief",
+    "image": "https://www.icrc.org/image.jpg",
+    "website": "https://www.icrc.org/"
+  },
+  {
+    "id": "54",
+    "title": "Syria Relief",
+    "description": "A large UK-based charity providing critical aid, including food, shelter, and medical support, primarily inside Syria.",
+    "category": "International Aid (Syria)",
+    "image": "https://syriarelief.org.uk/image.jpg",
+    "website": "https://syriarelief.org.uk/"
+  },
+  {
+    "id": "55",
+    "title": "UNICEF",
+    "description": "Focused on the rights and well-being of children worldwide, including in Syria and Yemen, providing emergency support and protection.",
+    "category": "Children & Youth",
+    "image": "https://www.unicef.org/image.jpg",
+    "website": "https://www.unicef.org/"
+  },
+  {
+    "id": "56",
+    "title": "Mercy Corps",
+    "description": "Responds to global conflict and crises, working in countries like Yemen to provide food, water, and economic opportunity.",
+    "category": "International Aid (Yemen)",
+    "image": "https://www.mercycorps.org/image.jpg",
+    "website": "https://www.mercycorps.org/"
+  },
+  {
+    "id": "57",
+    "title": "World Food Programme (WFP)",
+    "description": "The world's largest humanitarian organization addressing hunger, providing food assistance in crises like those in Yemen and Palestine.",
+    "category": "Food & Hunger",
+    "image": "https://www.wfp.org/image.jpg",
+    "website": "https://www.wfp.org/"
+  },
+  {
+    "id": "58",
+    "title": "Nova Ukraine",
+    "description": "A non-profit focused on providing direct humanitarian aid to the people of Ukraine, including medical supplies and support for displaced people.",
+    "category": "International Aid (Ukraine)",
+    "image": "https://novaukraine.org/image.jpg",
+    "website": "https://novaukraine.org/"
+  },
+  {
+    "id": "59",
+    "title": "International Rescue Committee (IRC)",
+    "description": "Helps people whose lives have been shattered by conflict and disaster, with major operations in Syria, Ukraine, and other war zones.",
+    "category": "Refugee Support",
+    "image": "https://www.rescue.org/image.jpg",
+    "website": "https://www.rescue.org/"
+  },
+  {
+    "id": "60",
+    "title": "Palestine Children's Relief Fund (PCRF)",
+    "description": "Provides free medical care for injured and ill children in the Middle East, including through sending volunteer medical teams to Palestine.",
+    "category": "Health (Palestine)",
+    "image": "https://www.pcrf.net/image.jpg",
+    "website": "https://www.pcrf.net/"
+  }
+]
