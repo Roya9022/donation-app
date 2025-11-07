@@ -7,6 +7,7 @@ export interface Charity {
   category: string;
   image: string;
   website: string;
+  donateLink: string
 }
 
 export const charities: Charity[] = charitiesData;
