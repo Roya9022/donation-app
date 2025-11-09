@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-import { Typography, ButtonBase } from '@mui/material';
+import { ButtonBase } from '@mui/material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { StyledBottomNavigation, classes } from './styles';

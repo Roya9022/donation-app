@@ -3,7 +3,7 @@
 @reference "tailwindcss";
 
 :root {
-  --background: #f5f5f5;
+  --background: #faf9fc;
   --foreground: #171717;
   --font-sans: 'Geist', sans-serif;
   --font-mono: 'Geist Mono', monospace;

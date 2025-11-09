@@ -4,7 +4,10 @@
       "title": "Welcome patron!",
       "together": "Let's make a positive difference together..."
     },
-    "description": "Help make a difference by donating to causes that matter. Your support changes lives."
+    "description": "Help make a difference by donating to causes that matter. Your support changes lives.",
+    "search": "Search Charities",
+    "notFound": "No charities found",
+    "adjustSearch": "Try adjusting your search"
   },
   "bottomNavigation": {
     "home": "Home",

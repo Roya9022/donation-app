@@ -9,6 +9,8 @@ export const colors = {
   primary: '#82AB9B',
   secondary: '#5C3167',
   secondaryLight: '#7A4B86',
+  secondaryTextLight: '#845F8E',
+  secondaryPale: '#FBF5FF',
 
   'dark-text': '#1C1C1C',
   'dark-grey': '#323232',

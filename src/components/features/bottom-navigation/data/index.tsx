@@ -1,9 +1,5 @@
 import { ReactNode } from 'react';
-import {
-  HomeRounded as HomeIcon,
-  VolunteerActivismRounded as FavoritesIcon,
-  AccountCircleRounded as ProfileIcon,
-} from '@mui/icons-material';
+import { HomeRounded, FavoriteRounded, AccountCircleRounded } from '@mui/icons-material';
 import { ROUTES } from '@/routes';
 
 export const bottomNavigationCheckRouteActive = (pathname: string, item: IBottomNavigationItem) => {
@@ -22,17 +18,17 @@ export interface IBottomNavigationItem {
 export const bottomNavigationTabs: IBottomNavigationItem[] = [
   {
     key: 'home',
-    icon: <HomeIcon fontSize="medium" />,
+    icon: <HomeRounded fontSize="medium" />,
     route: ROUTES.HOME,
   },
   {
     key: 'favorites',
-    icon: <FavoritesIcon fontSize="medium" />,
+    icon: <FavoriteRounded fontSize="medium" />,
     route: ROUTES.FAVORITES,
   },
   {
     key: 'profile',
-    icon: <ProfileIcon fontSize="medium" />,
+    icon: <AccountCircleRounded fontSize="medium" />,
     route: ROUTES.PROFILE,
   },
 ];

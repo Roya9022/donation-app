@@ -23,8 +23,8 @@ export const StyledBottomNavigation = styled('nav')(() => ({
   borderColor: colors.shadow,
   backgroundColor: colors.white,
   padding: '0.5rem 1rem',
-  borderTopLeftRadius: '12px',
-  borderTopRightRadius: '12px',
+  borderTopLeftRadius: '32px',
+  borderTopRightRadius: '32px',
   boxShadow: '0px -4px 12px rgba(0, 0, 0, 0.08)',
 
   [`& .${classes.iconActive}`]: {

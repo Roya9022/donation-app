@@ -1,15 +1,9 @@
-import Greeting from '@/components/features/home/Greeting';
-import CharitiesList from '@/components/features/home/CharitiesList';
-import { getAllCharities } from 'data/charities';
+import Home from '@/components/features/home';
+import { getAllCharities } from 'lib/charities';
 
 const HomePage: React.FC = () => {
   const charities = getAllCharities();
-  return (
-    <>
-      <Greeting />
-      <CharitiesList charities={charities} />
-    </>
-  );
+  return <Home charities={charities} />;
 };
 
 export default HomePage;

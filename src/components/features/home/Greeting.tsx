@@ -13,14 +13,18 @@ const Greeting: React.FC = () => {
   const displayGreeting = userFirstName ? `${greeting}, ${userFirstName}` : greeting;
 
   return (
-    <div className="px-4 py-4 bg-white rounded-b-[12px]">
-      <Typography variant="h6" fontWeight={600} sx={{ color: colors.primary }}>
+    <>
+      <Typography variant="h6" fontWeight={600} sx={{ color: colors.secondaryPale }}>
         {displayGreeting}
       </Typography>
-      <Typography variant="body2" fontWeight={600} sx={{ color: colors.text.secondary }}>
+      <Typography
+        variant="body2"
+        fontWeight={600}
+        sx={{ color: colors.secondaryTextLight, marginBottom: 1.5 }}
+      >
         {text.home.greeting.together}
       </Typography>
-    </div>
+    </>
   );
 };
 
