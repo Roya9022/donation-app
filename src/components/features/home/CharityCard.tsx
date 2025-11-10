@@ -48,17 +48,17 @@ const CharityCard: React.FC<CharityCardProps> = ({ charity }) => {
           sx={{
             backgroundColor: colors.primary,
             color: colors.white,
-            fontSize: { xs: '0.7rem', sm: '0.75rem' },
+            fontSize: '12px',
             height: { xs: 20, sm: 24 },
             borderRadius: 2.5,
           }}
         />
 
-        <Box
-          sx={{
+        <div
+          style={{
             position: 'relative',
-            width: { xs: 80, sm: 100, md: 120 },
-            height: { xs: 80, sm: 100, md: 120 },
+            width: 120,
+            height: 120,
             borderRadius: 2.5,
             overflow: 'hidden',
             backgroundColor: colors.secondaryPale,
@@ -69,13 +69,14 @@ const CharityCard: React.FC<CharityCardProps> = ({ charity }) => {
             alt={charity.title}
             fill
             priority={charity.id <= '6'}
-            style={{ objectFit: 'contain' }}
+            objectFit="contain"
             sizes="(max-width: 600px) 80px, (max-width: 900px) 100px, 120px"
           />
-        </Box>
+        </div>
       </Box>
       <CardContent
         sx={{
+          alignSelf: 'center',
           flex: 1,
           p: 0,
           display: 'flex',
@@ -89,7 +90,7 @@ const CharityCard: React.FC<CharityCardProps> = ({ charity }) => {
           sx={{
             color: colors.text.primary,
             fontWeight: 600,
-            fontSize: { xs: '0.95rem', sm: '1.1rem' },
+            fontSize: '14px',
             lineHeight: 1.3,
             display: '-webkit-box',
             WebkitLineClamp: 2,
@@ -103,7 +104,7 @@ const CharityCard: React.FC<CharityCardProps> = ({ charity }) => {
           variant="body2"
           sx={{
             color: colors.text.secondary,
-            fontSize: { xs: '0.8rem', sm: '0.875rem' },
+            fontSize: '12px',
             lineHeight: 1.4,
             display: '-webkit-box',
             WebkitLineClamp: { xs: 2, sm: 3 },

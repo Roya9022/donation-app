@@ -1,5 +1,5 @@
 const ProfilePage: React.FC = () => {
-  return <div>Favorites Page</div>;
+  return <div>Profile Page</div>;
 };
 
 export default ProfilePage;

@@ -60,7 +60,7 @@ const CategoryChips: React.FC<CategoryChipsProps> = ({
           sx={{
             backgroundColor: colors.secondaryLight,
             color: colors.secondaryPale,
-            fontSize: '0.75rem',
+            fontSize: '12px',
             height: 32,
             borderRadius: 3,
             flexShrink: 0,

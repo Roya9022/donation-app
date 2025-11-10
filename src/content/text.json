@@ -14,6 +14,18 @@
     "favorites": "My Favorites",
     "profile": "Profile"
   },
+  "details": {
+    "copied": "Link copied to clipboard!",
+    "cancelled": "Share cancelled",
+    "details": "Details",
+    "share": "Share",
+    "removeFavorite": "Remove from Favorites",
+    "addFavorite": "Add to Favorites",
+    "donateNow": "Donate Now",
+    "linkUnavailable": "Donation Link Unavailable",
+    "visitSite": "Visit Official Website",
+    "disclaimer": "By clicking \"Donate Now\", you will be redirected to the charity's official donation page. We do not process payments directly."
+  },
   "footer": {},
   "profile": {},
   "favorites": {}

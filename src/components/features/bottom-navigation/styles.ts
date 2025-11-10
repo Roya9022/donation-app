@@ -22,7 +22,7 @@ export const StyledBottomNavigation = styled('nav')(() => ({
   borderWidth: '1px 0 0 0',
   borderColor: colors.shadow,
   backgroundColor: colors.white,
-  padding: '0.5rem 1rem',
+  padding: '8px 16px',
   borderTopLeftRadius: '32px',
   borderTopRightRadius: '32px',
   boxShadow: '0px -4px 12px rgba(0, 0, 0, 0.08)',

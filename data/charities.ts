@@ -3,7 +3,7 @@ export const charities = [
     id: '1',
     title: "St. Jude Children's Research Hospital",
     description: 'Treats and defeats childhood cancer and other life-threatening diseases.',
-    category: 'Health',
+    category: 'Children',
     image: 'st-judes.jpg',
     website: 'https://www.stjude.org/',
     donateLink: 'https://www.stjude.org/donate',
