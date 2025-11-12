@@ -69,7 +69,9 @@ const CharityCard: React.FC<CharityCardProps> = ({ charity }) => {
             alt={charity.title}
             fill
             priority={charity.id <= '6'}
-            objectFit="contain"
+            style={{
+              objectFit: 'contain',
+            }}
             sizes="(max-width: 600px) 80px, (max-width: 900px) 100px, 120px"
           />
         </div>
