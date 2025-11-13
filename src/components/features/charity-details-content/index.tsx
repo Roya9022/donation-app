@@ -1,13 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { Box, Typography, Button, Chip, Container } from '@mui/material';
+import { Box, Typography, Button, Chip } from '@mui/material';
 import { OpenInNew } from '@mui/icons-material';
 import type { Charity } from 'lib/charities';
 import { validateCharityUrl } from 'lib/charities';
-import { colors } from '@/theme';
 import text from '@/content/text.json';
 import DetailsHeader from '../charity-details-header';
+import { StyledDetailsContainer, classes } from './styles';
 
 interface CharityDetailsContentProps {
   charity: Charity;
@@ -16,35 +16,12 @@ interface CharityDetailsContentProps {
 const CharityDetailsContent: React.FC<CharityDetailsContentProps> = ({ charity }) => {
   const isDonationLinkValid = validateCharityUrl(charity.donateLink);
   const isWebsiteLinkValid = validateCharityUrl(charity.website);
-  //TODO: Find and add more details about charities in data file
+
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100vh',
-      }}
-    >
-      <DetailsHeader title={charity.title} />
-      <Box
-        sx={{
-          flex: 1,
-          overflowY: 'auto',
-          px: { xs: 2, sm: 3, md: 4 },
-          py: 2,
-        }}
-      >
-        <Box
-          sx={{
-            position: 'relative',
-            width: '100%',
-            height: { xs: 250, sm: 300, md: 350 },
-            borderRadius: 4,
-            overflow: 'hidden',
-            backgroundColor: colors.secondaryPale,
-            mb: 3,
-          }}
-        >
+    <StyledDetailsContainer>
+      <DetailsHeader title={charity.title} charityId={charity.id} />
+      <Box className={classes.scrollableContent}>
+        <Box className={classes.imageBox}>
           <Image
             src={`/images/foundations/${charity.image}`}
             alt={charity.title}
@@ -53,52 +30,17 @@ const CharityDetailsContent: React.FC<CharityDetailsContentProps> = ({ charity }
             priority
           />
         </Box>
-        <Box sx={{ mb: 2 }}>
-          <Chip
-            label={charity.category}
-            sx={{
-              backgroundColor: colors.primary,
-              color: colors.white,
-              fontSize: '12px',
-              height: { xs: 20, sm: 24 },
-              borderRadius: 2.5,
-            }}
-          />
+        <Box className={classes.chipContainer}>
+          <Chip label={charity.category} className={classes.chip} />
         </Box>
-        <Typography
-          variant="h4"
-          sx={{
-            fontWeight: 700,
-            mb: 1.5,
-            fontSize: '20px',
-            color: colors.text.primary,
-            lineHeight: 1.2,
-          }}
-        >
+        <Typography variant="h4" className={classes.cardTitle}>
           {charity.title}
         </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            mb: 4,
-            color: colors.text.secondary,
-            fontSize: '14px',
-          }}
-        >
+        <Typography variant="body1" className={classes.description}>
           {charity.description}
         </Typography>
       </Box>
-      <Box
-        sx={{
-          px: { xs: 2, sm: 3, md: 4 },
-          py: 2,
-          backgroundColor: colors.white,
-          boxShadow: '0 -4px 12px rgba(0,0,0,0.08)',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 2,
-        }}
-      >
+      <Box className={classes.buttonContainer}>
         {isDonationLinkValid ? (
           <Button
             variant="contained"
@@ -107,35 +49,12 @@ const CharityDetailsContent: React.FC<CharityDetailsContentProps> = ({ charity }
             target="_blank"
             rel="noopener noreferrer"
             endIcon={<OpenInNew />}
-            sx={{
-              backgroundColor: colors.primary,
-              color: colors.white,
-              textTransform: 'none',
-              fontSize: '16px',
-              py: 1.5,
-              borderRadius: 3,
-              fontWeight: 600,
-              boxShadow: 'none',
-              '&:hover': {
-                backgroundColor: colors.pastel.green.dark,
-                boxShadow: 4,
-              },
-            }}
+            className={classes.donateButton}
           >
             {text.details.donateNow}
           </Button>
         ) : (
-          <Button
-            variant="contained"
-            size="small"
-            disabled
-            sx={{
-              textTransform: 'none',
-              fontSize: '16px',
-              py: 1.5,
-              borderRadius: 3,
-            }}
-          >
+          <Button variant="contained" size="small" disabled className={classes.donateButton}>
             {text.details.linkUnavailable}
           </Button>
         )}
@@ -147,36 +66,16 @@ const CharityDetailsContent: React.FC<CharityDetailsContentProps> = ({ charity }
             target="_blank"
             rel="noopener noreferrer"
             endIcon={<OpenInNew />}
-            sx={{
-              color: colors.primary,
-              borderColor: colors.primary,
-              textTransform: 'none',
-              fontSize: '16px',
-              py: 1.5,
-              borderRadius: 3,
-              fontWeight: 500,
-              borderWidth: '2px',
-              '&:hover': {
-                borderColor: colors.primary,
-                backgroundColor: colors.primaryShadow,
-              },
-            }}
+            className={classes.visitButton}
           >
             {text.details.visitSite}
           </Button>
         )}
-        <Typography
-          variant="caption"
-          sx={{
-            mt: 2,
-            color: colors.text.disabled,
-            lineHeight: 1.5,
-          }}
-        >
+        <Typography variant="caption" className={classes.disclaimer}>
           {text.details.disclaimer}
         </Typography>
       </Box>
-    </Box>
+    </StyledDetailsContainer>
   );
 };
 

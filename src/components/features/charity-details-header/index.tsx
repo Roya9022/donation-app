@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { AppBar, Toolbar, IconButton, Typography, Menu, MenuItem } from '@mui/material';
+import { Toolbar, IconButton, Typography, Menu, MenuItem } from '@mui/material';
 import {
   ArrowBackRounded,
   MoreVertRounded,
@@ -10,18 +10,24 @@ import {
   FavoriteRounded,
   FavoriteBorderRounded,
 } from '@mui/icons-material';
-import { colors } from '@/theme';
 import text from '@/content/text.json';
+import { isFavorite, toggleFavorite } from '@/utils/favorites';
+import { StyledAppBar, classes } from './styles';
 
 interface CharityDetailsHeaderProps {
   title: string;
+  charityId: string;
 }
 
-const CharityDetailsHeader: React.FC<CharityDetailsHeaderProps> = ({ title }) => {
+const CharityDetailsHeader: React.FC<CharityDetailsHeaderProps> = ({ title, charityId }) => {
   const router = useRouter();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [isFavorite, setIsFavorite] = useState(false);
+  const [isFav, setIsFav] = useState<boolean>(false);
   const open = Boolean(anchorEl);
+
+  useEffect(() => {
+    setIsFav(isFavorite(charityId));
+  }, [charityId]);
 
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -49,38 +55,21 @@ const CharityDetailsHeader: React.FC<CharityDetailsHeaderProps> = ({ title }) =>
   };
 
   const handleToggleFavorite = () => {
-    setIsFavorite(!isFavorite);
+    const newState = toggleFavorite(charityId);
+    setIsFav(newState);
     handleMenuClose();
-    // TODO: Save to localStorage or database
   };
 
   return (
-    <AppBar
-      position="sticky"
-      elevation={0}
-      sx={{
-        backgroundColor: colors.secondary,
-        borderBottom: `1px solid ${colors.shadow}`,
-      }}
-    >
-      <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <IconButton edge="start" onClick={() => router.back()} sx={{ color: colors.secondaryPale }}>
+    <StyledAppBar position="sticky" elevation={0}>
+      <Toolbar className={classes.toolbar}>
+        <IconButton edge="start" onClick={() => router.back()} className={classes.backButton}>
           <ArrowBackRounded />
         </IconButton>
-        <Typography
-          variant="h6"
-          sx={{
-            color: colors.secondaryPale,
-            fontWeight: 600,
-            fontSize: '16px',
-            flex: 1,
-            textAlign: 'center',
-            px: 2,
-          }}
-        >
+        <Typography variant="h6" className={classes.title}>
           {text.details.details}
         </Typography>
-        <IconButton edge="end" onClick={handleMenuClick} sx={{ color: colors.secondaryPale }}>
+        <IconButton edge="end" onClick={handleMenuClick} className={classes.menuButton}>
           <MoreVertRounded />
         </IconButton>
         <Menu
@@ -96,21 +85,21 @@ const CharityDetailsHeader: React.FC<CharityDetailsHeaderProps> = ({ title }) =>
             horizontal: 'right',
           }}
         >
-          <MenuItem onClick={handleShare}>
-            <ShareRounded sx={{ mr: 1.5, fontSize: 20 }} />
+          <MenuItem onClick={handleShare} className="d-flex gap-2">
+            <ShareRounded className={classes.menuIcon} />
             {text.details.share}
           </MenuItem>
-          <MenuItem onClick={handleToggleFavorite}>
-            {isFavorite ? (
-              <FavoriteRounded sx={{ mr: 1.5, fontSize: 20, color: colors.primary }} />
+          <MenuItem onClick={handleToggleFavorite} className="d-flex gap-2">
+            {isFav ? (
+              <FavoriteRounded className={classes.favoriteIcon} />
             ) : (
-              <FavoriteBorderRounded sx={{ mr: 1.5, fontSize: 20 }} />
+              <FavoriteBorderRounded className={classes.menuIcon} />
             )}
-            {isFavorite ? text.details.removeFavorite : text.details.addFavorite}
+            {isFav ? text.details.removeFavorite : text.details.addFavorite}
           </MenuItem>
         </Menu>
       </Toolbar>
-    </AppBar>
+    </StyledAppBar>
   );
 };
 

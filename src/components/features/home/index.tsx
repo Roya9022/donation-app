@@ -5,10 +5,10 @@ import { Box, TextField, Typography } from '@mui/material';
 import { Search } from '@mui/icons-material';
 import { colors } from '@/theme';
 import type { Charity } from 'lib/charities';
-import Greeting from './Greeting';
-import CharityCard from './CharityCard';
+import Greeting from './greeting';
+import CharityCard from './charity-card';
 import text from '@/content/text.json';
-import CategoryChips from './CategoryChips';
+import CategoryChips from './charity-chips';
 
 interface CharitiesListProps {
   charities: Charity[];
