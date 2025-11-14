@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { CardContent, Typography, Chip, Box, IconButton } from '@mui/material';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 import { useRouter } from 'next/navigation';
-import type { Charity } from 'lib/charities';
+import type { Charity } from '@/lib/charities';
 import { isFavorite, toggleFavorite } from '@/utils/favorites';
 import { StyledCharityCard, classes } from './styles';
 

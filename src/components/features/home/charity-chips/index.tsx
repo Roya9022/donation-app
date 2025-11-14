@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import { Chip } from '@mui/material';
-import type { Charity } from 'lib/charities';
+import type { Charity } from '@/lib/charities';
 import { StyledChipsContainer, classes } from './styles';
 
 type CategoryName = string;

@@ -1,4 +1,3 @@
-// src/components/features/charity-details-content/styles.ts
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { colors } from '@/theme/colors';

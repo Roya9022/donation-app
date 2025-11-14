@@ -1,5 +1,5 @@
 'use client';
-import { FC } from 'react';
+
 import { ButtonBase } from '@mui/material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,7 +9,7 @@ import {
   bottomNavigationCheckRouteActive as checkRouteActive,
 } from './data';
 
-const BottomNavigation: FC = () => {
+const BottomNavigation: React.FC = () => {
   const pathname = usePathname() ?? '';
 
   return (

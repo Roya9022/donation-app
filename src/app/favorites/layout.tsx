@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { BottomNavigation } from '@/components/features';
+import { BottomNavigation } from '@/components/shared';
 
 export default function FavoritesPageLayout({ children }: PropsWithChildren) {
   return (

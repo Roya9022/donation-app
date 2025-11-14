@@ -1,4 +1,3 @@
-// styles.ts
 import { Card } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { colors } from '@/theme/colors';

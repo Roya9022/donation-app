@@ -1,4 +1,3 @@
-// src/components/features/simple-header/styles.ts
 import { AppBar } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { colors } from '@/theme/colors';

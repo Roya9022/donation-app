@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import { Box, Typography, Button, Chip } from '@mui/material';
 import { OpenInNew } from '@mui/icons-material';
-import type { Charity } from 'lib/charities';
-import { validateCharityUrl } from 'lib/charities';
+import type { Charity } from '@/lib/charities';
+import { validateCharityUrl } from '@/lib/charities';
 import text from '@/content/text.json';
-import DetailsHeader from '../charity-details-header';
+import DetailsHeader from '../header';
 import { StyledDetailsContainer, classes } from './styles';
 
 interface CharityDetailsContentProps {

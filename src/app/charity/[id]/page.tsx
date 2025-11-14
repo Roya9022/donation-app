@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import CharityDetailsContent from '@/components/features/charity-details-content';
-import { getCharityById } from 'lib/charities';
+import CharityDetailsContent from '@/components/features/charity-details/content';
+import { getCharityById } from '@/lib/charities';
 
 interface CharityPageProps {
   params: { id: string };
