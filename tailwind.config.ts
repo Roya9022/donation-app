@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'text-primary': '#212121',
-        'text-secondary': '#616161',
-        'text-disabled': '#9e9e9e',
+        textPrimary: '#212121',
+        textSecondary: '#616161',
+        textDisabled: '#9e9e9e',
         primary: '#82AB9B',
         secondary: '#5C3167',
         secondaryLight: '#7A4B86',
-        'dark-text': '#1C1C1C',
-        'dark-grey': '#323232',
+        darkText: '#1C1C1C',
+        darkGrey: '#323232',
         shadow: '#F0F0F0',
         white: '#FFFFFF',
         pastel: {

@@ -1,11 +1,12 @@
 'use client';
 
 import { useMemo } from 'react';
-import { Box, Chip } from '@mui/material';
-import { colors } from '@/theme';
-import type { Charity } from 'lib/charities';
+import { Chip } from '@mui/material';
+import type { Charity } from '@/lib/charities';
+import { StyledChipsContainer, classes } from './styles';
 
 type CategoryName = string;
+
 interface CategoryChipsProps {
   charities: Charity[];
   selectedCategory: CategoryName | null;
@@ -35,20 +36,7 @@ const CategoryChips: React.FC<CategoryChipsProps> = ({
   const activeCategory = selectedCategory || 'All';
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        gap: 1,
-        paddingTop: 1.5,
-        overflowX: 'auto',
-        pb: 1,
-        msOverflowStyle: 'none',
-        scrollbarWidth: 'none',
-        '&::-webkit-scrollbar': {
-          display: 'none',
-        },
-      }}
-    >
+    <StyledChipsContainer>
       {dynamicCategories.map(category => (
         <Chip
           key={category}
@@ -57,17 +45,10 @@ const CategoryChips: React.FC<CategoryChipsProps> = ({
           clickable
           variant={activeCategory === category ? 'outlined' : 'filled'}
           color="default"
-          sx={{
-            backgroundColor: colors.secondaryLight,
-            color: colors.secondaryPale,
-            fontSize: '12px',
-            height: 32,
-            borderRadius: 3,
-            flexShrink: 0,
-          }}
+          className={classes.chip}
         />
       ))}
-    </Box>
+    </StyledChipsContainer>
   );
 };
 

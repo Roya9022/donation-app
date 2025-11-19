@@ -30,6 +30,7 @@ export const StyledBottomNavigation = styled('nav')(() => ({
   [`& .${classes.iconActive}`]: {
     color: colors.primary,
   },
+
   [`& .${classes.iconInactive}`]: {
     color: colors.text.disabled,
   },
@@ -38,6 +39,7 @@ export const StyledBottomNavigation = styled('nav')(() => ({
     color: colors.primary,
     fontWeight: 500,
   },
+
   [`& .${classes.textInactive}`]: {
     color: colors.text.secondary,
   },

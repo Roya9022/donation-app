@@ -13,8 +13,8 @@ export const colors = {
   secondaryTextLight: '#845F8E',
   secondaryPale: '#FBF5FF',
 
-  'dark-text': '#1C1C1C',
-  'dark-grey': '#323232',
+  darkText: '#1C1C1C',
+  darkGrey: '#323232',
   shadow: '#F0F0F0',
   white: '#FFFFFF',
 

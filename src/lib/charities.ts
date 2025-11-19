@@ -1,4 +1,4 @@
-import { charities as charitiesData } from '../data/charities';
+import { charities as charitiesData } from 'data/charities';
 
 export interface Charity {
   id: string;

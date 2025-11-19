@@ -26,7 +26,15 @@
     "visitSite": "Visit Official Website",
     "disclaimer": "By clicking \"Donate Now\", you will be redirected to the charity's official donation page. We do not process payments directly."
   },
-  "footer": {},
-  "profile": {},
-  "favorites": {}
+  "favorites": {
+    "favoriteTitle": "Favorites",
+    "noFavorites": "No Favorites Yet!",
+    "noFavoritesDesc": " Favorite the charities that resonate with you the most to see them here."
+  },
+  "pullToRefresh": {
+    "pull": "Pull to Refresh",
+    "release": "Release to Refresh",
+    "refreshing": "Refreshing..."
+  },
+  "profile": {}
 }
