@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/roya_/Desktop/Donation%20App/donation-app/src/app/home/layout.tsx"],"sourcesContent":["import { PropsWithChildren } from 'react';\r\nimport BottomNavigation from '@/features/bottom-navigation';\r\n\r\nexport default function HomePageLayout({ children }: PropsWithChildren) {\r\n  return (\r\n    <>\r\n      <div className='pb-[50px]'>{children}</div>\r\n      <div className='w-full mx-auto fixed bottom-0 left-1/2 transform -translate-x-1/2'>\r\n        <BottomNavigation />\r\n      </div>\r\n    </>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;AAGe,SAAS,eAAe,EAAE,QAAQ,EAAqB;IACpE,qBACE;;0BACE,8OAAC;gBAAI,WAAU;0BAAa;;;;;;0BAC5B,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;;;;;;;;;;;;AAIT","debugId":null}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/roya_/Desktop/Donation%20App/donation-app/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
