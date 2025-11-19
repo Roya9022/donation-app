@@ -3,7 +3,7 @@ import CharityDetailsContent from '@/components/features/charity-details/content
 import { getCharityById } from '@/lib/charities';
 
 interface CharityPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export default async function CharityDetailsPage({ params }: CharityPageProps) {
