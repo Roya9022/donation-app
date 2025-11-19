@@ -55,10 +55,7 @@ const Favorites: React.FC = () => {
 
   return (
     <StyledFavoritesBox>
-      {/* Fixed Header */}
       <SimpleHeader pageTitle={text.favorites.favoriteTitle} />
-
-      {/* Scrollable Content with Pull-to-Refresh */}
       <Box sx={{ flex: 1, overflow: 'hidden' }}>
         <PullToRefresh
           onRefresh={handleRefresh}
