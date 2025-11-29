@@ -11,7 +11,7 @@ import type { Charity } from '@/lib/charities';
 import { PullToRefresh } from '@/components/shared';
 import text from '@/content/text.json';
 import { StyledHomeContainer, classes } from './styles';
-
+// import AIRecommender from '../ai-recommender';
 interface CharitiesListProps {
   charities: Charity[];
 }
@@ -40,6 +40,7 @@ const Home: React.FC<CharitiesListProps> = ({ charities: initialCharities }) => 
     <StyledHomeContainer>
       <Box className={classes.headerContainer}>
         <Greeting />
+        {/* <AIRecommender /> */}
         <TextField
           label=""
           placeholder={text.home.search}
