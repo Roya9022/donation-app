@@ -1,5 +1,7 @@
+import Profile from '@/components/features/profile';
+
 const ProfilePage: React.FC = () => {
-  return <div>Profile Page</div>;
+  return <Profile />;
 };
 
 export default ProfilePage;
