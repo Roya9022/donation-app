@@ -23,6 +23,7 @@ export const StyledCharityCard = styled(Card)(({ theme }) => ({
   transition: 'all 0.3s ease',
   borderRadius: 32,
   position: 'relative',
+  zIndex: 1,
   '&:hover': {
     boxShadow: theme.shadows[6],
     transform: 'translateY(-4px)',
@@ -32,7 +33,7 @@ export const StyledCharityCard = styled(Card)(({ theme }) => ({
     position: 'absolute',
     top: 8,
     right: 8,
-    zIndex: 10,
+    zIndex: 2,
     backgroundColor: colors.white,
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
     '&:hover': {

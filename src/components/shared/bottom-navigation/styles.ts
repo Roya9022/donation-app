@@ -17,7 +17,7 @@ export const StyledBottomNavigation = styled('nav')(() => ({
   display: 'flex',
   justifyContent: 'space-around',
   alignItems: 'center',
-  zIndex: 10,
+  zIndex: 9999,
   borderStyle: 'solid',
   borderWidth: '1px 0 0 0',
   borderColor: colors.shadow,
